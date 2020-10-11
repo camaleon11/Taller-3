@@ -1,0 +1,87 @@
+.x {
+	color: #66A000;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 40px;
+}
+.col {
+	background-color: #85004C;
+}
+.a {
+	background: #66A000;
+	width: 735px;
+	height: 490px;
+	color: #85004C;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 90px;
+}
+.b {
+    display: none;
+}
+.c {
+	top: 300px;
+	background-color: #66A000;
+	height: 39px;
+	width: 300px;
+	color: #85004C;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 30px;
+}
+.b1 {
+	position: absolute;
+    top: 100px;
+    left: 316px;
+    background: #66A000;
+	width: 735px;
+	height: 490px;
+}
+.d1 {
+	position: absolute;
+    top: 100px;
+    left: 316px;
+	background: #66A000;
+	width: 735px;
+	height: 490px;
+	color: #85004C;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 90px;
+}
+.f {
+	position: absolute;
+    top: 0px;
+}
+.e {
+	position: relative;
+    top: 350px;
+    left: 160px;
+	height: 100px;
+	width: 100px;
+	animation-duration: 5s;
+	animation-name: caminar;
+}
+.g {
+	position: relative;
+    top: 350px;
+    left: 300px;
+	height: 100px;
+	width: 100px;
+}
+.h {
+	position: relative;
+    top: 350px;
+    left: 140px;
+	height: 100px;
+	width: 100px;
+}
+@keyframes caminar {
+  from {
+    position: relative;
+    top: 350px;
+    left: 10px;
+  }
+
+  to {
+    position: relative;
+    top: 350px;
+    left: 160px;
+  }
+}
