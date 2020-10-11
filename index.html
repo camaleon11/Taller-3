@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>animacion</title>
+</head>
+<body class="col">
+<link rel="stylesheet" href="css.css">
+<center><h1 class="x">A C T I V I D A D</h1></center>
+
+<center><div class="a">¡¡¡Bienvenidos a mi cuento interactivo!!!</div></center>
+
+<div class="b" id="b1">
+<img src="1.jpg" class="f">
+<img src="Gota-caminando.gif" class="b" onclick="b()" id="e1">
+<img src="Hongo-nada.png" class="b" onclick="c()" id="j1">
+<img src="Hongo-nada.png" class="g" onclick="a()" id="h1">
+<img src="Hongo-hablando.gif" class="b" id="g1">
+<img src="Gota-hablando.gif" class="b" id="i1">
+</div>
+
+<center><div class="b" id="d1">Gracias por atencion</div></center>
+<br>
+<center><button class="c" onclick="a1()">Siguiente</button></center>
+
+<script type="text/javascript">
+	var g1 = document.getElementById("g1")
+	var h1 = document.getElementById("h1")
+	var f1 = document.getElementById("f1")
+	var e1 = document.getElementById("e1")
+	var d1 = document.getElementById("d1")
+	var b1 = document.getElementById("b1");
+	var conP;
+	var conH;
+	conH=0;
+	conP=0;
+	function a1() {
+    if (conP==0)
+    	{
+    	b1.className = "b1";
+    	e1.className = "e";
+        }
+    else
+        {
+            if (conP==1)
+            {
+            b1.className = "b";
+            d1.className = "d1";
+            }
+            else
+            {
+            	conP=0;
+            }
+        }
+	}
+	function a() {
+		h1.className = "b";
+		g1.className = "g"
+		var a3 = new Audio();
+        a3.src="Hongo.m4a";
+        a3.play();
+        conP=1;
+	}
+	function b() {
+		e1.className = "b";
+		i1.className = "h"
+		var a4 = new Audio();
+        a4.src="Gota.m4a";
+        a4.play();
+        j1.className = "g";
+		g1.className = "b"
+	}
+	function c() {
+		j1.className = "b";
+		g1.className = "g"
+		var a3 = new Audio();
+        a3.src="Hongo2.m4a";
+        a3.play();
+	}
+	if (e1.className=="e") 
+	{
+		var a2 = new Audio();
+        a2.src="comienzo.m4a";
+        a2.play();
+	}
+</script>
+</body>
+</html>
